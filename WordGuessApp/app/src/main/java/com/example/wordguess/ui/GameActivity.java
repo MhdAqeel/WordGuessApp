@@ -141,7 +141,7 @@ public class GameActivity extends AppCompatActivity {
 
     private void submitLeaderboard() {
         LeaderboardEntry entry = new LeaderboardEntry(
-                state.playerName, state.score, state.elapsedSeconds, state.level, Instant.now().toString()
+                state.playerName, state.score, state.elapsedSeconds, state.level, String.valueOf(System.currentTimeMillis())
         );
         repo.submitScore(entry, ok -> {});
     }

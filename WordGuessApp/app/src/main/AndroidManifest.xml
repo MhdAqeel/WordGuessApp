@@ -9,7 +9,8 @@
 
         <activity android:name=".ui.LeaderboardActivity" />
         <activity android:name=".ui.GameActivity" />
-        <activity android:name=".ui.OnboardingActivity">
+        <activity android:name=".ui.OnboardingActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
