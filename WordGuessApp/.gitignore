@@ -1,0 +1,10 @@
+# Gradle
+.gradle/
+**/build/
+
+# Local machine / IDE
+.idea/
+*.iml
+local.properties
+.DS_Store
+Thumbs.db
